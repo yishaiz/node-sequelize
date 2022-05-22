@@ -9,10 +9,13 @@ sequelize
   .sync({ force: true })
   .then((result) => {
     return Customer.create({ name: 'Chandler Bing', email: 'cb@gmail.com' });
-    // console.log(result);
   })
   .then((customer) => {
     console.log({ customer });
+    return Order.create({ total: 45 });
+  })
+  .then((order) => {
+    console.log({ order });
   })
   .catch((err) => {
     console.log(err);

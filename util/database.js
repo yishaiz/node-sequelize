@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const db = 'db';
+const db = 'mysql';
 const user = 'root';
 const password = '12345';
 const host = 'localhost';
